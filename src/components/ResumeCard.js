@@ -26,6 +26,9 @@ function ResumeCard() {
         <h1>{resume.name}</h1>
         <p>{resume.phone} || {resume.email}</p>
       </div>
+      <div id='job-title'>
+        <h1>{resume.jobTitle}</h1>
+      </div>
       <div id='summary'>
         <p>{resume.summary}</p>
       </div>
@@ -36,6 +39,11 @@ function ResumeCard() {
       <div id='education'>
         <h1>EDUCATION</h1>
         <h3><i>secondary</i> : {resume.secondarySchool}</h3>
+        <h3><i>primary</i> : {resume.primarySchool}</h3>
+      </div>
+      <div id="experience">
+        <h1>EXPERIENCE</h1>
+        <h2>{resume.experience}</h2>
       </div>
 
 
