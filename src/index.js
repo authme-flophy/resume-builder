@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Resumes from './components/Resumes';
 import ResumeFacts from './components/ResumeFacts';
+import ResumeCard from './components/ResumeCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

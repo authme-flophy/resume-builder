@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { NavLink, Outlet } from 'react-router-dom'
+import "../App.css"
 
 function Resumes() {
   
@@ -11,7 +13,14 @@ function Resumes() {
   }, [])
   
   return (
-    <div>Resumes</div>
+    <div className='resume-container'>
+      <div className="resume-nav">
+        {
+          resumes.map(resume => <NavLink className="resume-nav-links" to={`/resumes/${resume.id}`} key={resume.id}>{resume.name}</NavLink>)
+        }
+      </div>
+      <Outlet className="outlet-div"/>
+    </div>
   )
 }
 
