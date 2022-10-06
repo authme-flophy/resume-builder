@@ -7,6 +7,7 @@ function Resumes() {
   useEffect(() => {
     fetch("https://resume-builder-server-app.herokuapp.com/resumes")
     .then(res => res.json())
+    .then(data => setResumes(data))
   }, [])
   
   return (
