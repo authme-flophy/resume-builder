@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Resumes from './components/Resumes';
 import ResumeFacts from './components/ResumeFacts';
 import ResumeCard from './components/ResumeCard';
+import CreateResume from './components/CreateResume';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
           <Route path=':resumeId' element={<ResumeCard/>}/>
         </Route>
         <Route path="/resumefacts" element={<ResumeFacts />}/>
+        <Route path="/create" element={<CreateResume />}/>
       </Route>
     </Routes>
   

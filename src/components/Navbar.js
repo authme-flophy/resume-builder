@@ -7,6 +7,7 @@ function Navbar() {
     <nav className="nav">
       <Link className="nav-links" to="/resumes">Resumes</Link>
       <Link className="nav-links" to="/resumefacts">Resume Facts</Link>
+      <Link className="nav-links" to="/create">Create Yours</Link>
     </nav>
   )
 }
