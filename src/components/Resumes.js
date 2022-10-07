@@ -16,7 +16,7 @@ function Resumes() {
     <div className='resume-container'>
       <div className="resume-nav">
         {
-          resumes.map(resume => <NavLink className="resume-nav-links" to={`/resumes/${resume.id}`} key={resume.id}>{resume.name}</NavLink>)
+          resumes.map(resume => <NavLink className="resume-nav-links" to={`/resumes/${resume.id}`} key={resume.id}>{resume.name.toUpperCase()}</NavLink>)
         }
       </div>
       <Outlet className="outlet-div"/>
